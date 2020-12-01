@@ -1,14 +1,5 @@
 h1 {
-    color: red;
+    background-color: darkgray;
+    text-align: center;
 }
 
-body {
-    background-color: red;
-    font-family: "Quicksand", sans-serif;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    overflow: scroll;
-    overflow-x: hidden;
-    padding: 0;
-  }

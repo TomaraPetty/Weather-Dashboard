@@ -5,18 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
     <h1 class="jumbotron">Weather Dashboard</h1>
-    
-    <form action="/" method="post">
-        <label for="cityInput">City Name: </label>
-        <input id="cityInput" type="text" name="cityName">
-        <button type="submit">Go!</button>
-    </form>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+    <div id="cityChoice">
+        <h1 id="feelsLike"></h1>
+        <h2 id="temperature"></h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-md-6">
+
+                <form action="/" method="post">
+                    <label for="cityInput formGroupExampleInput">City Name: </label>
+                    <input class="form-control" id="cityInput formGroupExampleInput" type="text" name="cityName" placeholder="Enter city name.">
+                    <button class="btn btn-outline-primary my-1" type="submit">Search</button>
+                </form><br>
+                
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">Austin</button>
+                    <button type="button" class="list-group-item list-group-item-action">Chicago</button>
+                    <button type="button" class="list-group-item list-group-item-action">New York</button>
+                    <button type="button" class="list-group-item list-group-item-action">Orlando</button>
+                    <button type="button" class="list-group-item list-group-item-action">San Francisco</button>
+                    <button type="button" class="list-group-item list-group-item-action">Seattle</button>
+                    <button type="button" class="list-group-item list-group-item-action">Denver</button>
+                    <button type="button" class="list-group-item list-group-item-action">Atlanta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
     <script src="./app.js"></script>
 </body>
